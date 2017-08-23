@@ -1,0 +1,16 @@
+1-Go to your solution and on your Portable project, right click and select Manage NuGet Packages.
+2-Search and install Xam.Plugin.Connectivity NuGet Package abd install it3-
+    
+3-to check the internet connectivity 
+
+using Plugin.Connectivity;
+
+if (CrossConnectivity.Current.IsConnected) {  
+//your code
+   مثلا عرض ويب فيو 
+} else {  
+    // write your code if there is no Internet available  
+   
+}  
+    
+    
