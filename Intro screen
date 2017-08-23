@@ -1,0 +1,40 @@
+//in amxl file style.axml
+
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="Theme.Splash" parent="android:Theme">
+    <item name="android:windowBackground">@drawable/your intro image name</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+</resources>
+
+//in a new Activity loadingscreen.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+using System.Threading;
+
+namespace your namespace name
+{
+    [Activity(Label = "your lable name", MainLauncher = true, Theme = "@style/Theme.Splash", NoHistory = true, Icon = "@drawable/hanyiocon")]
+    public class loadingscreen : Activity
+    {
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+            // base.OnCreate(savedInstanceState);
+            Thread.Sleep(2600); //time of screen view
+            //Start Activity1 Activity  
+            StartActivity(typeof(MainActivity));
+        }
+    }
+}
