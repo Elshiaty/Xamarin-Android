@@ -1,6 +1,6 @@
+//in axml new file vslues>>Add>>New Item>>aXML File>>colors.axml
 <resources>
   
-
   <color name="black_overlay">#66000000</color>
   <item name="lightblue" type="color">#28bceb</item>
   <item name="lbany" type="color">#5FC0F6</item>
