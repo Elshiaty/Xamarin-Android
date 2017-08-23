@@ -1,3 +1,6 @@
+//It's a style for API>23 android 
+//xml file style
+
 <?xml version="1.0" encoding="UTF-8" ?>
 <resources>
   <!-- Inherit from the light Material Theme -->
@@ -9,3 +12,10 @@
     <item name="android:statusBarColor">@color/orange</item>
   </style>
 </resources>
+
+//in AndroidManifest.xml
+
+
+	<application android:label="your lable name"
+               android:theme="@style/MyCustomTheme"
+               ></application>
